@@ -1,7 +1,9 @@
+import Landing from "./screens/Landing";
+
 const App = () => {
   return (
     <>
-      <h1>My app</h1>
+      <Landing />
     </>
   );
 };
