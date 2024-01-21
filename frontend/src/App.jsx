@@ -1,9 +1,9 @@
-import Landing from "./screens/Landing";
+import {Outlet} from 'react-router-dom';
 
 const App = () => {
   return (
     <>
-      <Landing />
+      <Outlet />
     </>
   );
 };

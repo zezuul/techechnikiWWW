@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Roboto+Mono&display=swap');
+
+
+body {
+  font-family: 'DM Mono', monospace;
+  background-color: #D5E1E1;
+}
+
+.notification-text {
+  font-family: 'Roboto Mono', monospace;
+}

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-//import {useNavigate} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import '../styles/Landing.css';
 import names from "../images/Plannerly.png";
 import shapes from "../images/canvas.png";
