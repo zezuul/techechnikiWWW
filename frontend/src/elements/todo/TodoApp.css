@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Roboto+Mono&display=swap');
+
+body{
+    background-color: #d5e1e1;
+    color: #252525;
+    font-family: 'DM Mono', monospace;
+    font-size: 10vh;
+}
+*{
+    box-sizing: border-box;
+}
+
+form{
+    border: 2px solid #252525;
+    border-radius: 5px;
+    padding: 5px;
+    display:flex;
+}
+form input[type="text"] {
+    background: none;
+    border:0;
+    padding: 0 8px;
+    display:block;
+    width: 100%;
+    font-family: 'DM Mono', monospace;
+    font-size: 2vh;
+}
+
+form input[type="text"]:focus {
+    outline: none;
+  }
+
+form button{
+    background-color: #d5e1e1;
+    
+    border-radius: 6px;
+    cursor:pointer;
+}
+
+div.task{
+    background-color: #f79cff;
+    border-radius: 10px;
+    padding: 15px 15px;
+    margin-top: 15px;
+    display:flex;
+    align-items: center;
+    font-size: 2vh
+    
+}
+div.task svg{
+    height: 2.5vh;
+    margin-right: 8px;
+    fill: #252525;
+}
+
+div.task-name, div.task form{
+    flex-grow:1;
+}
+
+h1, h2{
+    text-align: center;
+    height: 8vh;
+}
+
+div.checkbox{
+    display:flex;
+    align-items: center;
+}
