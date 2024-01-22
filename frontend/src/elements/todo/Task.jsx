@@ -3,8 +3,9 @@ import {useState} from "react";
 
 import { SlTrash } from "react-icons/sl";
 
-export default function Task({name,done,onToggle,onTrash,onRename}) {
+const Task = ({name,done,onToggle= () => {},onTrash= () => {},onRename= () => {}}) => {
   const [editMode,setEditMode] = useState(false);
+
   return (
     <div className={'task ' + (done?'done':'')}>
       <Checkbox checked={done} onClick={() => onToggle(!done)} />
@@ -26,4 +27,7 @@ export default function Task({name,done,onToggle,onTrash,onRename}) {
         />
     </div>
   );
-}
+};
+
+
+export default Task;

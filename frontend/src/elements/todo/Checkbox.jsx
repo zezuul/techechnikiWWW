@@ -1,4 +1,4 @@
-export default function Checkbox({checked = false, onClick}) {
+export default function Checkbox({checked = false, onClick= () => {}}) {
     return (
       <div onClick={onClick}>
         {!checked && (
@@ -13,4 +13,4 @@ export default function Checkbox({checked = false, onClick}) {
         )}
       </div>
     );
-  }
+  };

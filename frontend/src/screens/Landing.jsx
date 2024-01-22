@@ -22,15 +22,26 @@ const Landing = () => {
 
   const cls = visible ? "visible" : "hidden";
 
-  let navigate = useNavigate();
+  const navigate = useNavigate();
   const showLogin = () => {
-    navigate('/GetStarted');
+    console.log('Button clicked. Navigating to /login');
+    navigate('/login');
   };
 
+  const submitHandler = async (e) => {
+    e.preventDefault();
+    try{
+        console.log('Button clicked. Navigating to /login');
+        navigate('/login');
+    } catch(err){
+        toast.error(err?.data?.message || err.error);
+    }
+};
+
   return (
-    <section className="Landing">
+    <div className="Landing">
         <header className={cls} font='body'>
-        <div className="one-option-button" onClick={showLogin}>
+        <div className="one-option-button" onClick={e => submitHandler(e)}>
         <div className="marquee">
         <div className="track">
         <div className="content">
@@ -61,7 +72,7 @@ const Landing = () => {
         
       
     </div>
-        </section>
+        </div>
   );
 };
 

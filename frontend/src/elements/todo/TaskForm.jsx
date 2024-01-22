@@ -1,7 +1,7 @@
 import {useState} from "react";
 import { SlPlus } from "react-icons/sl";
 
-export default function TaskForm({onAdd}) {
+const TaskForm = ({onAdd = () => {} }) => {
   const [taskName,setTaskName] = useState('');
   function handleSubmit(ev) {
     ev.preventDefault();
@@ -21,4 +21,5 @@ export default function TaskForm({onAdd}) {
              placeholder="Your next task..."/>
     </form>
   );
-}
+};
+export default TaskForm;
